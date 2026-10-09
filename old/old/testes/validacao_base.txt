@@ -1,0 +1,241 @@
+
+==============================================================================
+0. CARREGAMENTO
+==============================================================================
+  ✅ selecionado: 12,597 linhas × 19 colunas
+  ✅ longitudinal: 12,597 linhas × 30 colunas
+     anos no selecionado: [2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
+     primeira coluna: ANO | última: ABANDONO_MED
+
+==============================================================================
+1. COLUNAS ESPERADAS
+==============================================================================
+  ✅ selecionado tem as 19 colunas esperadas
+  ✅ selecionado: nenhuma coluna extra inesperada
+
+==============================================================================
+2. TIPOS (regra 6 do CLAUDE.md)
+==============================================================================
+  ✅ CO_ENTIDADE é string
+  ✅ CO_MUNICIPIO é string
+  ✅ ANO é inteiro (int16)
+  ✅ todas as 12 taxas são Float64 nullable
+  ✅ CO_ENTIDADE formato INEP (8 dígitos). ex: ['14000016', '14000032', '14000040']
+
+==============================================================================
+3. CHAVE COMPOSTA (ANO, CO_ENTIDADE)
+==============================================================================
+  ✅ chave (ANO, CO_ENTIDADE) é única — 1 linha por escola/ano
+
+==============================================================================
+4. VALORES '--' RESIDUAIS (regra 5)
+==============================================================================
+  ✅ nenhum '--' sobrou (todos viraram NA)
+
+==============================================================================
+5. COBERTURA DE ESCOLAS POR ANO
+==============================================================================
+      linhas  escolas  cobertura
+ANO                             
+2007     718      718        1.0
+2008     624      624        1.0
+2009     596      596        1.0
+2010     632      632        1.0
+2011     618      618        1.0
+2012     641      641        1.0
+2013     666      666        1.0
+2014     670      670        1.0
+2015     669      669        1.0
+2016     677      677        1.0
+2017     679      679        1.0
+2018     674      674        1.0
+2019     667      667        1.0
+2020     662      662        1.0
+2021     650      650        1.0
+2022     682      682        1.0
+2023     689      689        1.0
+2024     696      696        1.0
+2025     687      687        1.0
+  ✅ todos os anos: linhas == escolas únicas
+  ✅ 19 anos cobertos (2007-2025)
+
+==============================================================================
+6. CURVA DE ABANDONO POR ANO (ABANDONO_FUN_AF)
+==============================================================================
+ANO
+2007    7.44
+2008    6.41
+2009     6.1
+2010     6.5
+2011    6.34
+2012    6.58
+2013    5.42
+2014    5.09
+2015    6.84
+2016    5.39
+2017    4.55
+2018    5.69
+2019    5.17
+2020    0.99
+2021    2.96
+2022    4.94
+2023    3.01
+2024    2.62
+2025    2.41
+  ✅ 2020 (0.99) < 2019 (5.17) — queda pandêmica detectada
+  ✅ 2022 (4.94) > 2021 (2.96) — retorno pós-pandemia
+
+==============================================================================
+7. INTERVALO DAS TAXAS [0, 100]
+==============================================================================
+     APROVACAO_FUN: ok (min=0.00, max=100.00)
+     APROVACAO_FUN_AI: ok (min=0.00, max=100.00)
+     APROVACAO_FUN_AF: ok (min=0.00, max=100.00)
+     APROVACAO_MED: ok (min=0.00, max=100.00)
+     REPROVACAO_FUN: ok (min=0.00, max=100.00)
+     REPROVACAO_FUN_AI: ok (min=0.00, max=100.00)
+     REPROVACAO_FUN_AF: ok (min=0.00, max=70.60)
+     REPROVACAO_MED: ok (min=0.00, max=87.50)
+     ABANDONO_FUN: ok (min=0.00, max=100.00)
+     ABANDONO_FUN_AI: ok (min=0.00, max=100.00)
+     ABANDONO_FUN_AF: ok (min=0.00, max=100.00)
+     ABANDONO_MED: ok (min=0.00, max=100.00)
+  ✅ todas as taxas dentro de [0, 100]
+
+==============================================================================
+8. NULOS POR COLUNA
+==============================================================================
+                   nulos   pct
+ABANDONO_MED        9833  78.1
+REPROVACAO_MED      9833  78.1
+APROVACAO_MED       9833  78.1
+REPROVACAO_FUN_AF   7998  63.5
+ABANDONO_FUN_AF     7998  63.5
+APROVACAO_FUN_AF    7998  63.5
+APROVACAO_FUN_AI    2004  15.9
+REPROVACAO_FUN_AI   2004  15.9
+ABANDONO_FUN_AI     2004  15.9
+REPROVACAO_FUN       449   3.6
+APROVACAO_FUN        449   3.6
+ABANDONO_FUN         449   3.6
+NO_ENTIDADE            0   0.0
+ANO                    0   0.0
+CO_ENTIDADE            0   0.0
+CO_MUNICIPIO           0   0.0
+NO_MUNICIPIO           0   0.0
+LOCALIZACAO            0   0.0
+DEPENDENCIA            0   0.0
+  ✅ ANO: sem nulos
+  ✅ CO_ENTIDADE: sem nulos
+  ✅ CO_MUNICIPIO: sem nulos
+  ✅ LOCALIZACAO: sem nulos
+  ✅ DEPENDENCIA: sem nulos
+
+==============================================================================
+9. CATEGORIAS DE LOCALIZACAO E DEPENDENCIA
+==============================================================================
+     LOCALIZACAO (2): ['Rural', 'Urbana']
+     DEPENDENCIA (4): ['Estadual', 'Federal', 'Municipal', 'Privada']
+  ✅ LOCALIZACAO tem 2 categorias consistentes
+  ✅ LOCALIZACAO: todas as categorias presentes em todos os anos
+  ✅ DEPENDENCIA: todas as categorias presentes em todos os anos
+
+==============================================================================
+10. LONGITUDINAL — COLUNAS
+==============================================================================
+  ✅ longitudinal tem todas as 30 colunas esperadas
+
+==============================================================================
+11. LAG1 COERENTE COM O ANO ANTERIOR
+==============================================================================
+  ✅ ABANDONO_FUN_AF_LAG1 = ABANDONO_FUN_AF de (ANO-1) para todas as linhas
+
+==============================================================================
+12. DELTA1 = VALOR ATUAL - VALOR ANTERIOR
+==============================================================================
+  ✅ ABANDONO_FUN_AF_DELTA1 = ABANDONO_FUN_AF - LAG1 em 4240 linhas
+
+==============================================================================
+13. T1 = VALOR DO ANO SEGUINTE
+==============================================================================
+  ✅ ABANDONO_FUN_AF_T1 = ABANDONO_FUN_AF do (ANO+1) para 4349 linhas
+
+==============================================================================
+14. ANO_ALVO — INVESTIGAÇÃO
+==============================================================================
+     total de linhas sem ANO_ALVO: 1139
+ANO
+2007    106
+2008     59
+2009     29
+2010     33
+2011     19
+2012     22
+2013     20
+2014     14
+2015     13
+2016     13
+2017     11
+2018     30
+2019     11
+2020     30
+2021      6
+2022      7
+2023     11
+2024     18
+2025    687
+  ✅ 2025: 687 linhas sem alvo (esperado — último ano)
+     2007-2024: 452 linhas sem alvo (escola não aparece em t+1)
+  ✅ todas as 452 linhas sem alvo (2007-2024) confirmam escola ausente em t+1
+
+==============================================================================
+15. COBERTURA DOS ALVOS T1
+==============================================================================
+     ABANDONO_FUN_T1: 11126 preenchidos (88.3%)
+     ABANDONO_FUN_AF_T1: 4349 preenchidos (34.5%)
+     ABANDONO_MED_T1: 2629 preenchidos (20.9%)
+  ✅ ABANDONO_FUN_T1 > ABANDONO_FUN_AF_T1 (esperado: mais escolas ofertam o FUN inteiro)
+     escolas com T1 FUN mas não AF: 6777 (esperado: só AI)
+       exemplo: {'CO_ENTIDADE': '14000040', 'ANO': 2007, 'NO_ENTIDADE': 'ESC MUN ANTONIO GOMES DA SILVA'}
+
+==============================================================================
+16. ENTRADAS E SAÍDAS DE ESCOLAS
+==============================================================================
+     2007→2008: + 12 entradas | -106 saídas
+     2008→2009: + 31 entradas | - 59 saídas
+     2009→2010: + 65 entradas | - 29 saídas
+     2010→2011: + 19 entradas | - 33 saídas
+     2011→2012: + 42 entradas | - 19 saídas
+     2012→2013: + 47 entradas | - 22 saídas
+     2013→2014: + 24 entradas | - 20 saídas
+     2014→2015: + 13 entradas | - 14 saídas
+     2015→2016: + 21 entradas | - 13 saídas
+     2016→2017: + 15 entradas | - 13 saídas
+     2017→2018: +  6 entradas | - 11 saídas
+     2018→2019: + 23 entradas | - 30 saídas
+     2019→2020: +  6 entradas | - 11 saídas
+     2020→2021: + 18 entradas | - 30 saídas
+     2021→2022: + 38 entradas | -  6 saídas
+     2022→2023: + 14 entradas | -  7 saídas
+     2023→2024: + 18 entradas | - 11 saídas
+     2024→2025: +  9 entradas | - 18 saídas
+     total: 421 entradas, 452 saídas em 18 transições
+     escolas presentes em TODOS os 19 anos: 414
+  ✅ 414 escolas com painel completo (bom para lags)
+
+==============================================================================
+17. REDE_PUBLICA
+==============================================================================
+REDE_PUBLICA
+1    12059
+0      538
+  ✅ REDE_PUBLICA é booleana/0-1
+
+==============================================================================
+RESUMO
+==============================================================================
+  ✅ OK:      33
+  ⚠️  Warn:   0
+  ❌ Falhas:  0
+
+  🎉 BASE VALIDADA — nenhuma falha crítica

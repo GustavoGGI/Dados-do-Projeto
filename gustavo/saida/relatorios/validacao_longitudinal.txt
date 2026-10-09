@@ -1,0 +1,33 @@
+VALIDAÇÃO — tx_rend RR 2007-2025 (selecionado + longitudinal)
+======================================================================
+
+selecionado: 12597 linhas x 19 colunas | longitudinal: 12597 x 30
+
+Por ano (médias só das escolas com valor; compare 2010→2011 e 2014→2015):
+  ano  linhas  c/AF c/MED  abandAF  abandMED  T1_AF soma≠100 compFora
+ 2007     718   225   107     7.44     12.79    226        0        0
+ 2008     624   228   107     6.41      9.53    221        0        0
+ 2009     596   221   103     6.10      9.25    223        0        0
+ 2010     632   225   111     6.50      9.38    226        0        0
+ 2011     618   228   113     6.34     10.98    239        0        0
+ 2012     641   241   125     6.58     12.62    239        0        0
+ 2013     666   242   129     5.42      9.82    242        0        0
+ 2014     670   245   138     5.09      9.38    245        0        0
+ 2015     669   245   144     6.84     10.26    245        0        0
+ 2016     677   248   154     5.39      8.16    248        0        0
+ 2017     679   250   158     4.55      8.61    252        0        0
+ 2018     674   252   160     5.69     10.18    249        0        0
+ 2019     667   251   168     5.17     10.07    249        0        0
+ 2020     662   249   167     0.99      1.60    246        0        0
+ 2021     650   247   168     2.96      5.52    248        0        0
+ 2022     682   248   173     4.94     11.34    244        0        0
+ 2023     689   245   177     3.01      7.15    251        0        0
+ 2024     696   252   179     2.62      5.50    256        0        0
+ 2025     687   257   183     2.41      5.87      0        0        0
+
+Dependência (após Particular→Privada): {'Estadual': 7004, 'Municipal': 4958, 'Privada': 538, 'Federal': 97}
+
+Comparação com a base da Gabi (2019-2025): 4733 linhas em comum de 4733 minhas e 6054 dela
+  [DIF] ANO_ALVO: ausência diverge em 25, valor diverge em 0
+  (LAG1/DELTA1 comparados só de 2020 em diante; em 2019 eu tenho LAG de 2018 e ela não: 249 escolas)
+  (colunas não listadas: idênticas, inclusive onde é ausente)

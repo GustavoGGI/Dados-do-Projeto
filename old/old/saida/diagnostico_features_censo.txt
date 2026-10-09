@@ -1,0 +1,44 @@
+FEATURES DO CENSO — RR 2007-2025
+============================================================
+Linhas: 12597
+Colunas: 36
+
+Colunas do Censo (18):
+  - IIB_agua_potavel
+  - IIB_energia_rede
+  - IIB_coleta_lixo
+  - IIB_banheiro
+  - IDA_despensa
+  - IDA_refeitorio
+  - IDA_sala_diretoria
+  - IDA_sala_professor
+  - IDA_secretaria
+  - IDP_biblioteca
+  - IDP_lab_informatica
+  - IDP_patio_coberto
+  - IDP_quadra_esportes
+  - IEP_computador
+  - IEP_impressora
+  - IEP_projetor
+  - IEP_internet
+
+Cobertura por ano (escolas com tx_rend):
+  2007: n=718, cobertura_media=76.5%
+  2008: n=624, cobertura_media=100.0%
+  2009: n=596, cobertura_media=100.0%
+  2010: n=632, cobertura_media=100.0%
+  2011: n=618, cobertura_media=100.0%
+  2012: n=641, cobertura_media=100.0%
+  2013: n=666, cobertura_media=100.0%
+  2014: n=670, cobertura_media=100.0%
+  2015: n=669, cobertura_media=100.0%
+  2016: n=677, cobertura_media=100.0%
+  2017: n=679, cobertura_media=100.0%
+  2018: n=674, cobertura_media=100.0%
+  2019: n=667, cobertura_media=100.0%
+  2020: n=662, cobertura_media=100.0%
+  2021: n=650, cobertura_media=100.0%
+  2022: n=682, cobertura_media=100.0%
+  2023: n=689, cobertura_media=100.0%
+  2024: n=696, cobertura_media=100.0%
+  2025: n=687, cobertura_media=100.0%

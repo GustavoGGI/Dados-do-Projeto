@@ -1,0 +1,292 @@
+DIAGNÓSTICO — tx_rend RR 2007-2025 (bruto)
+============================================================
+Total de linhas: 12,597
+Total de colunas: 238
+
+Nota sobre gerações de layout:
+  - 2007-2011: cabeçalho em 2 linhas, planilha dividida em 6 abas.
+  - 2012-2014: cabeçalho em 2 linhas, aba única 'ESCOLAS'.
+  - 2015-2020: cabeçalho técnico em 1 linha, nomes tap_/tre_/tab_.
+  - 2021-2025: cabeçalho técnico em 1 linha, nomes 1_CAT_/2_CAT_/3_CAT_.
+
+Por ano:
+  2007:  718 linhas,  718 escolas [id=Código da Escola]
+  2008:  624 linhas,  624 escolas [id=Código da Escola]
+  2009:  596 linhas,  596 escolas [id=Código da Escola]
+  2010:  632 linhas,  632 escolas [id=Código da Escola]
+  2011:  618 linhas,  618 escolas [id=Código da Escola]
+  2012:  641 linhas,  641 escolas [id=Código da Escola]
+  2013:  666 linhas,  666 escolas [id=Código da Escola]
+  2014:  670 linhas,  670 escolas [id=Código da Escola]
+  2015:  669 linhas,  669 escolas [id=CO_ENTIDADE]
+  2016:  677 linhas,  677 escolas [id=CO_ENTIDADE]
+  2017:  679 linhas,  679 escolas [id=CO_ENTIDADE]
+  2018:  674 linhas,  674 escolas [id=CO_ENTIDADE]
+  2019:  667 linhas,  667 escolas [id=CO_ENTIDADE]
+  2020:  662 linhas,  662 escolas [id=CO_ENTIDADE]
+  2021:  650 linhas,  650 escolas [id=CO_ENTIDADE]
+  2022:  682 linhas,  682 escolas [id=CO_ENTIDADE]
+  2023:  689 linhas,  689 escolas [id=CO_ENTIDADE]
+  2024:  696 linhas,  696 escolas [id=CO_ENTIDADE]
+  2025:  687 linhas,  687 escolas [id=CO_ENTIDADE]
+
+Colunas (todas):
+  - Ano
+  - Região
+  - UF
+  - Código do Município
+  - Nome do Município
+  - Localização
+  - Rede
+  - Código da Escola
+  - Nome da Escola
+  - Aprovação no 1º Ano do Ensino Fundamental
+  - Taxa de Aprovação - Ensino Fundamental de 8 e 9 anos - Aprovação na 1ª série/2º Ano
+  - Aprovação na 2ª série/3º Ano
+  - Aprovação na 3ª série/4º Ano
+  - Aprovaçãona 4ª série/5º Ano
+  - Aprovação na 5ª série/6º Ano
+  - Aprovação na 6ª série/7º Ano
+  - Aprovação na 7ª série/8º Ano
+  - Aprovação na 8ª série/9º Ano
+  - Aprovação 1ª a 4ª  Série/1º a 5º Ano
+  - Aprovação 5ª a 8ª Série/ 6º ao 9º Ano
+  - Total Aprovação Fundamental
+  - Taxa de Aprovação - Ensino Médio - Aprovação na 1ª série - Médio
+  - Aprovação na 2ª série - Médio
+  - Aprovação na 3ª série - Médio
+  - Aprovação na 4ª série - Médio
+  - Total  Aprovação Médio Não Seriado
+  - Total  Aprovação Médio
+  - Taxa de Reprovação - Ensino Fundamental de 8 e 9 anos - Reprovação no 1º Ano do Ensino Fundamental
+  - Reprovação na 1ª série/2º Ano
+  - Reprovação na 2ª série/3º Ano
+  - Reprovação na 3ª série/4º Ano
+  - Reprovação na 4ª série/5º Ano
+  - Reprovação na 5ª série/6º Ano
+  - Reprovação na 6ª série/7º Ano
+  - Reprovação na 7ª série/8º Ano
+  - Reprovação na 8ª série/9º Ano
+  - Reprovação 1ª a 4ª  Série/1º a 5º Ano
+  - Reprovação 5ª a 8ª Série/ 6º ao 9º Ano
+  - Total Reprovação Fundamental
+  - Taxa de Reprovação - Ensino Médio - Reprovação na 1ª série - Médio
+  - Reprovação na 2ª série - Médio
+  - Reprovação na 3ª série - Médio
+  - Reprovação na 4ª série - Médio
+  - Total  Reprovação Médio Não Seriado
+  - Total  Reprovação Médio
+  - Taxa de Abandono - Ensino Fundamental de 8 e 9 anos - Abandono no 1º Ano do Ensino Fundamental
+  - Abandono na 1ª série/2º Ano
+  - Abandono na 2ª série/3º Ano
+  - Abandono na 3ª série/4º Ano
+  - Abandono na 4ª série/5º Ano
+  - Abandono na 5ª série/6º Ano
+  - Abandono na 6ª série/7º Ano
+  - Abandono na 7ª série/8º Ano
+  - Abandono na 8ª série/9º Ano
+  - Abandono 1ª a 4ª  Série/1º a 5º Ano
+  - Abandono 5ª a 8ª Série/ 6º ao 9º Ano
+  - Total Abandono Fundamental
+  - Taxa de Abandono - Ensino Médio - Abandono na 1ª série - Médio
+  - Abandono na 2ª série - Médio
+  - Abandono na 3ª série - Médio
+  - Abandono na 4ª série - Médio
+  - Total  Abandono Médio Não Seriado
+  - Total Abandono - Médio
+  - ANO
+  - Taxa de Aprovação - Ensino Fundamental de 8 e 9 anos - Total Aprovação no Ens. Fundamental
+  - Aprovação - Anos Iniciais (1º ao 5º Ano)
+  - Aprovação - Anos Finais (6º ao 9º Ano)
+  - Aprovação no 1º Ano
+  - Aprovação no 2º Ano
+  - Aprovação no 3º Ano
+  - Aprovação no 4º Ano
+  - Aprovação no 5º Ano
+  - Aprovação no 6º Ano
+  - Aprovação no 7º Ano
+  - Aprovação no 8º Ano
+  - Aprovação no 9º Ano
+  - Taxa de Aprovação - Ensino Médio - Total Aprovação no Ens. Médio
+  - Aprovação na 1ª série
+  - Aprovação na 2ª série
+  - Aprovação na 3ª série
+  - Aprovação na 4ª série
+  - Aprovação Médio Não-Seriado
+  - Taxa de Reprovação - Ensino Fundamental de 8 e 9 anos - Total Reprovação no Ens. Fundamental
+  - Reprovação - Anos Iniciais (1º ao 5º Ano)
+  - Reprovação - Anos Finais (6º ao 9º Ano)
+  - Reprovação no 1º Ano
+  - Reprovação no 2º Ano
+  - Reprovação no 3º Ano
+  - Reprovação no 4º Ano
+  - Reprovação no 5º Ano
+  - Reprovação no 6º Ano
+  - Reprovação no 7º Ano
+  - Reprovação no 8º Ano
+  - Reprovação no 9º Ano
+  - Taxa de Reprovação - Ensino Médio - Total Reprovação no Ens. Médio
+  - Reprovação na 1ª série
+  - Reprovação na 2ª série
+  - Reprovação na 3ª série
+  - Reprovação na 4ª série
+  - Reprovação Médio Não-Seriado
+  - Taxa de Abandono - Ensino Fundamental de 8 e 9 anos - Total Abandono Ens. Fundamental
+  - Abandono - Anos Iniciais (1º ao 5º Ano)
+  - Abandono - Anos Finais (6º ao 9º Ano)
+  - Abandono no 1º Ano
+  - Abandono no 2º Ano
+  - Abandono no 3º Ano
+  - Abandono no 4º Ano
+  - Abandono no 5º Ano
+  - Abandono no 6º Ano
+  - Abandono no 7º Ano
+  - Abandono no 8º Ano
+  - Abandono no 9º Ano
+  - Taxa de Abandono - Ensino Médio - Total Abandono no Ens. Médio
+  - Abandono na 1ª série
+  - Abandono na 2ª série
+  - Abandono na 3ª série
+  - Abandono na 4ª série
+  - Abandono Médio Não-Seriado
+  - Dependência Administrativa
+  - NO_REGIAO
+  - SG_UF
+  - CO_MUNICIPIO
+  - NO_MUNICIPIO
+  - CO_ENTIDADE
+  - NO_ENTIDADE
+  - TIPOLOCA
+  - Dependad
+  - tap_FUN
+  - tap_F14
+  - tap_F58
+  - tap_F00
+  - tap_F01
+  - tap_F02
+  - tap_F03
+  - tap_F04
+  - tap_F05
+  - tap_F06
+  - tap_F07
+  - tap_F08
+  - tap_MED
+  - tap_M01
+  - tap_M02
+  - tap_M03
+  - tap_M04
+  - tap_MNS
+  - tre_FUN
+  - tre_F14
+  - tre_F58
+  - tre_F00
+  - tre_F01
+  - tre_F02
+  - tre_F03
+  - tre_F04
+  - tre_F05
+  - tre_F06
+  - tre_F07
+  - tre_F08
+  - tre_MED
+  - tre_M01
+  - tre_M02
+  - tre_M03
+  - tre_M04
+  - tre_MNS
+  - tab_FUN
+  - tab_F14
+  - tab_F58
+  - tab_F00
+  - tab_F01
+  - tab_F02
+  - tab_F03
+  - tab_F04
+  - tab_F05
+  - tab_F06
+  - tab_F07
+  - tab_F08
+  - tab_MED
+  - tab_M01
+  - tab_M02
+  - tab_M03
+  - tab_M04
+  - tab_MNS
+  - NU_ANO_CENSO
+  - NO_CATEGORIA
+  - NO_DEPENDENCIA
+  - 1_CAT_FUN
+  - 1_CAT_FUN_AI
+  - 1_CAT_FUN_AF
+  - 1_CAT_FUN_01
+  - 1_CAT_FUN_02
+  - 1_CAT_FUN_03
+  - 1_CAT_FUN_04
+  - 1_CAT_FUN_05
+  - 1_CAT_FUN_06
+  - 1_CAT_FUN_07
+  - 1_CAT_FUN_08
+  - 1_CAT_FUN_09
+  - 1_CAT_MED
+  - 1_CAT_MED_01
+  - 1_CAT_MED_02
+  - 1_CAT_MED_03
+  - 1_CAT_MED_04
+  - 1_CAT_MED_NS
+  - 2_CAT_FUN
+  - 2_CAT_FUN_AI
+  - 2_CAT_FUN_AF
+  - 2_CAT_FUN_01
+  - 2_CAT_FUN_02
+  - 2_CAT_FUN_03
+  - 2_CAT_FUN_04
+  - 2_CAT_FUN_05
+  - 2_CAT_FUN_06
+  - 2_CAT_FUN_07
+  - 2_CAT_FUN_08
+  - 2_CAT_FUN_09
+  - 2_CAT_MED
+  - 2_CAT_MED_01
+  - 2_CAT_MED_02
+  - 2_CAT_MED_03
+  - 2_CAT_MED_04
+  - 2_CAT_MED_NS
+  - 3_CAT_FUN
+  - 3_CAT_FUN_AI
+  - 3_CAT_FUN_AF
+  - 3_CAT_FUN_01
+  - 3_CAT_FUN_02
+  - 3_CAT_FUN_03
+  - 3_CAT_FUN_04
+  - 3_CAT_FUN_05
+  - 3_CAT_FUN_06
+  - 3_CAT_FUN_07
+  - 3_CAT_FUN_08
+  - 3_CAT_FUN_09
+  - 3_CAT_MED
+  - 3_CAT_MED_01
+  - 3_CAT_MED_02
+  - 3_CAT_MED_03
+  - 3_CAT_MED_04
+  - 3_CAT_MED_NS
+
+Detalhes por zip:
+  2009: [cache] 596 linhas
+  2007: [cache] 718 linhas
+  2010: [cache] 632 linhas
+  2008: [cache] 624 linhas
+  2013: [cache] 666 linhas
+  2011: [cache] 618 linhas
+  2014: [cache] 670 linhas
+  2012: [cache] 641 linhas
+  2015: [cache] 669 linhas
+  2018: [cache] 674 linhas
+  2016: [cache] 677 linhas
+  2017: [cache] 679 linhas
+  2021: [cache] 650 linhas
+  2019: [cache] 667 linhas
+  2022: [cache] 682 linhas
+  2020: [cache] 662 linhas
+  2023: [cache] 689 linhas
+  2025: [cache] 687 linhas
+  2024: [cache] 696 linhas
