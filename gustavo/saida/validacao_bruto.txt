@@ -1,0 +1,64 @@
+VALIDAÇÃO — bruto (Gustavo) vs oficial (pipeline da Gabi)
+======================================================================
+Bruto: 12,597 linhas × 238 colunas
+Coluna de ID: CO_ENTIDADE
+
+
+[2019] bruto=667 linhas | oficial=667 linhas | comuns=667
+  Só no meu:        0
+  Só no oficial:    0
+  Colunas de taxa mapeadas: 54
+    exemplo de mapa: [('tap_FUN', 'tap_FUN'), ('tap_F14', 'tap_F14'), ('tap_F04', 'tap_F04')]
+  Colunas efetivamente comparadas: 54
+  ✅ TODAS as taxas comparadas batem (dentro de 0.01)
+
+[2020] bruto=662 linhas | oficial=662 linhas | comuns=662
+  Só no meu:        0
+  Só no oficial:    0
+  Colunas de taxa mapeadas: 54
+    exemplo de mapa: [('tap_FUN', 'tap_FUN'), ('tap_F14', 'tap_F14'), ('tap_F04', 'tap_F04')]
+  Colunas efetivamente comparadas: 54
+  ✅ TODAS as taxas comparadas batem (dentro de 0.01)
+
+[2021] bruto=650 linhas | oficial=650 linhas | comuns=650
+  Só no meu:        0
+  Só no oficial:    0
+  Colunas de taxa mapeadas: 54
+    exemplo de mapa: [('1_CAT_FUN', '1_CAT_FUN'), ('1_CAT_FUN_AI', '1_CAT_FUN_AI'), ('1_CAT_FUN_AF', '1_CAT_FUN_AF')]
+  Colunas efetivamente comparadas: 54
+  ✅ TODAS as taxas comparadas batem (dentro de 0.01)
+
+[2022] bruto=682 linhas | oficial=682 linhas | comuns=682
+  Só no meu:        0
+  Só no oficial:    0
+  Colunas de taxa mapeadas: 54
+    exemplo de mapa: [('1_CAT_FUN', '1_CAT_FUN'), ('1_CAT_FUN_AI', '1_CAT_FUN_AI'), ('1_CAT_FUN_AF', '1_CAT_FUN_AF')]
+  Colunas efetivamente comparadas: 54
+  ✅ TODAS as taxas comparadas batem (dentro de 0.01)
+
+[2023] bruto=689 linhas | oficial=689 linhas | comuns=689
+  Só no meu:        0
+  Só no oficial:    0
+  Colunas de taxa mapeadas: 54
+    exemplo de mapa: [('1_CAT_FUN', '1_CAT_FUN'), ('1_CAT_FUN_AI', '1_CAT_FUN_AI'), ('1_CAT_FUN_AF', '1_CAT_FUN_AF')]
+  Colunas efetivamente comparadas: 54
+  ✅ TODAS as taxas comparadas batem (dentro de 0.01)
+
+[2024] bruto=696 linhas | oficial=696 linhas | comuns=696
+  Só no meu:        0
+  Só no oficial:    0
+  Colunas de taxa mapeadas: 54
+    exemplo de mapa: [('1_CAT_FUN', '1_CAT_FUN'), ('1_CAT_FUN_AI', '1_CAT_FUN_AI'), ('1_CAT_FUN_AF', '1_CAT_FUN_AF')]
+  Colunas efetivamente comparadas: 54
+  ✅ TODAS as taxas comparadas batem (dentro de 0.01)
+
+[2025] bruto=687 linhas | oficial=687 linhas | comuns=687
+  Só no meu:        0
+  Só no oficial:    0
+  Colunas de taxa mapeadas: 54
+    exemplo de mapa: [('1_CAT_FUN', '1_CAT_FUN'), ('1_CAT_FUN_AI', '1_CAT_FUN_AI'), ('1_CAT_FUN_AF', '1_CAT_FUN_AF')]
+  Colunas efetivamente comparadas: 51
+  ✅ TODAS as taxas comparadas batem (dentro de 0.01)
+
+======================================================================
+FIM DA VALIDAÇÃO
